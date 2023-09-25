@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/0b546e6c3d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+
+        <img class="logo" src="./lkop.png">
+        
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#feature">Feature</a>
+            <a href="#usage">Usage</a>
+            <a href="#review">Review</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+    </header>
+    <!--------------------hom sction------------------------------------>
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Welcome to The ABR Studio</h3>
+            <p><span>Booking start Only 5000/-</span> <br>This is best Photography studio in your area  you can book for any function like weeding birthday party Garndopening of anything etc every facilities are availabe like vidio recording drone camera crane camera </p>
+            <a href="#" class="btn">get started</a>
+        </div>
+        <div class="swiper image-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img4.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img5.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img3.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img0.png" />
+                  </div>
+                
+            </div>
+
+        </div>
+    </section>
+    <section class="feature" id="feature">
+        <h1 class="heading">app feature</h1>
+        <div class="box-container">
+<div class="box">
+    <i class="fas fa-magic"></i>
+    <h3>smooth desiner</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus illum sit dignissimos atque explicabo impedit error ipsum sapiente ducimus quam.</p>
+</div>
+        </div>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+     var swiper = new Swiper(".image-slider", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 10,
+        stretch: 0,
+        depth: 100,
+        modifier: 2,
+        slideShadows: true,
+      },
+      loop: true,
+      autoplay: {
+        delay:2000,
+        disableOninteraction:false,
+      },
+    });
+</script>
+<script src="./index.js"></script>
+</html>
